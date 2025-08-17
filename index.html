@@ -6,10 +6,9 @@
     <meta name="description" content="A narrative adventure game where you develop a bioweapon on your dead father's order">
     <meta name="keywords" content="game, videogame, adventure, noah">
     <title>NOAH</title>
-    <link rel="icon" href="assets/favicon-DU2Rs2ZJ.svg">
-
-    <script type="module" src="assets/index-DkGzXl-M.js"></script>
-    <link rel="stylesheet" href="assets/index-xuwCuTyN.css">
+    <link rel="icon" href="/noah/assets/favicon-DU2Rs2ZJ.svg">
+    <script type="module" crossorigin src="/noah/assets/index-B51XzwYk.js"></script>
+    <link rel="stylesheet" crossorigin href="/noah/assets/index-5WKw7e4j.css">
   </head>
 
   <body>
@@ -18,10 +17,10 @@
       <div class="parallax__layer parallax__layer--middle"></div>
 
       <h1 class="parallax__layer parallax__layer--title">
-        <img class="main-title" draggable="false" src="assets/noah_title-Bv0ML7-7.png" alt="Noah">
+        <img class="main-title" draggable="false" src="/noah/assets/noah_title-Bv0ML7-7.png" alt="Noah">
       </h1>
 
-      <img draggable="false" src="assets/forest_paralax_top-wqiMT_YK.png">
+      <img draggable="false" src="/noah/assets/forest_paralax_top-wqiMT_YK.png">
     </header>
 
     <main>
@@ -30,7 +29,7 @@
       </section>
 
       <section class="teaser">
-        <img draggable="false" src="assets/forest_paralax_bot-DduOPc2N.png">
+        <img draggable="false" src="/noah/assets/forest_paralax_bot-DduOPc2N.png">
         <h2 class="title">Teaser</h2>
         <iframe
           class="video border"
@@ -50,6 +49,7 @@
       <section class="features">
         <h2 class="title">Features</h2>
 
+        <!-- add the features with js instead -->
         <ul class="features__list">
           <li>
             <figure class="features__list-item">
@@ -91,20 +91,28 @@
       <section class="screenshots">
         <h2 class="title">Screenshots</h2>
 
-        <div class="screenshots__slideshow border" role="region" aria-label="Image gallery">
-          <img id="screenshot-1" class="screenshots__image" src="assets/dadlab-YRUcuLRM.jpg" alt="Screenshot 1" role="tabpanel" aria-hidden="false">
-          <img id="screenshot-2" class="screenshots__image" src="assets/office-D5N-7NyW.jpg" alt="Screenshot 2" role="tabpanel" aria-hidden="true">
-
+        <div class="screenshots__slideshow" role="region" aria-label="Image gallery">
+          <div class="screenshots__images">
+            <div class="screenshots__padding">
+              <img id="screenshot-1" class="screenshots__image border" src="/noah/assets/dadlab-YRUcuLRM.jpg" alt="Screenshot 1" draggable="false" role="tabpanel" loading="lazy">
+            </div>
+            <div class="screenshots__padding">
+              <img id="screenshot-2" class="screenshots__image border" src="/noah/assets/office-D5N-7NyW.jpg" alt="Screenshot 2" draggable="false" role="tabpanel" loading="lazy">
+            </div>
+            <div class="screenshots__padding">
+              <img id="screenshot-3" class="screenshots__image border" src="/noah/assets/TITLE__BG-pVGtajR5.jpg" alt="Screenshot 3" draggable="false" role="tabpanel" loading="lazy">
+            </div>
+          </div>
           <button class="screenshots__arrow screenshots__prev" aria-label="Previous image">&#10094;</button>
           <button class="screenshots__arrow screenshots__next" aria-label="Next image">&#10095;</button>
-
-          <div class="screenshots__dots" role="tablist"></div>
         </div>
+        <div class="screenshots__dots" role="tablist"></div>
       </section>
 
       <section class="team">
         <h2 class="title">The team</h2>
 
+        <!-- add team members with js instead -->
         <ul>
           <li>
             <span class="team__name">Luca <span class="uppercase">Ábrányi</span></span>
